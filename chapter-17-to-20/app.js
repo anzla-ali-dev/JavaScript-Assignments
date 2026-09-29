@@ -24,12 +24,12 @@ for (var i = 0;  i <=10; i++) {
 
 // Question#4
 
-// var num = +prompt("Enter Your Table Number")
-// var maltipule = +prompt("Enter Your Table Maltipication number")
+var num = +prompt("Enter Your Table Number")
+var maltipule = +prompt("Enter Your Table Maltipication number")
 
-// for(var i = 1 ; i <=maltipule ; i++ ){
-//     document.write(`${num} x ${i} = ${num*i} <br>`);
-// }
+for(var i = 1 ; i <=maltipule ; i++ ){
+    document.write(`${num} x ${i} = ${num*i} <br>`);
+}
 
 // Question#5
 
