@@ -75,4 +75,29 @@ var refrenceDate = new Date();
 var starOf2015 = new Date("january 1, 2015");
 var diffSeconds = Math.floor(refrenceDate.getTime() - starOf2015.getTime() / 1000);
 document.write("On reference date " + refrenceDate + ",<br>");
-document.write(diffSeconds + " seconds had passed since beginning of 2015"); 
+document.write(diffSeconds + " seconds had passed since beginning of 2015 </br></br>"); 
+
+// Question#11
+
+var nowToday = new Date();
+document.write(`Current Date is${nowToday} </br></br>`);
+
+nowToday.setHours(nowToday.getHours() -1);
+document.write(`1 Hours ago , It was ${nowToday}</br></br>`);
+
+// Question#12
+
+var nowToday2 = new Date();
+var pastDate = new Date();
+
+pastDate.setFullYear(nowToday2.getFullYear() -100);
+alert("Current Date:" + nowToday2 + "\n 100 Years back, It was " + pastDate)
+
+
+// Question#13
+
+var age = prompt("Enter Your Age:");
+var currentYear = new Date().getFullYear();
+var birthYear = currentYear - age ;
+document.write(` Your Age is ${age} </br></br>`);
+document.write(` Your Birth Year is ${birthYear} </br></br>`);
