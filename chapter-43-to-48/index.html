@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Chapter-43 to 48</title>
+    <style>
+        img {
+            height: 190px;
+            width: 150px;
+            margin: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="javaScript:void(0)" onclick="alert('You clicked the link!'); return false;">Click Me</a>
+
+    <h2>Mobile Phone lookup</h2>
+    
+    <!-- Images par onclick event lagaya gaya hai -->
+    <img src="https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111940_SP706-iphone_6_plus-mul.png" alt="iPhone 6 Plus" onclick="showThanks('iPhone 6 Plus')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0LcCpddHBFxgOdZ_fq3IMUTAUkBrgKwuBldnb719QwkHgbJQE5X1KCdM&s=10" alt="Galaxy S6 Edge" onclick="showThanks('Galaxy S6 Edge')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_j1FYC0p71UDdx8C4dA66smYWiTV1d3o_-vARZwA8oA&s=10" alt="LG V10" onclick="showThanks('LG V10')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_OgVLT_DLzpEt-awS7pyC2wc40NaZ6M5uS-9GnT1IZGeaM7HAjfQxBvc&s=10" alt="Huawei P8" onclick="showThanks('Huawei P8')">
+
+    <script>
+        function showThanks(phoneName) {
+            alert("Thanks for purchasing " + phoneName + " from us");
+        }
+    </script>
+
+    
+    <table border="1">
+        <tr>
+            <td>0</td>
+            <td>jhon</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>maryam</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+         <tr>
+            <td>2</td>
+            <td>labina</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+         <tr>
+            <td>3</td>
+            <td>rubi</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+         <tr>
+            <td>4</td>
+            <td>zaini</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+    
+    <img src="./imgs/bulboff.jpg" alt="" height="200" width="150"  onmouseover="src='./imgs/bulbon.jpg'" onmouseout="src='./imgs/bulboff.jpg'">
+
+    <button onclick="ince()" >Incerese</button>
+    <span id="num">0</span>
+    <button onclick="dece()">Decerese</button>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
